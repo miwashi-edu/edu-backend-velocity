@@ -23,8 +23,8 @@ npm install dotenv
 ```bash
 cat > ./src/config.js << 'EOF'
 require('dotenv').config();
-const PORT = process.env.PORT || 3000
-module.exports = {PORT}
+const PORT = process.env.PORT || 3000;
+module.exports = {PORT};
 EOF
 ```
 
@@ -38,7 +38,7 @@ app.use(express.json());
 
 app.get('/', (req,res) => {
     res.json({success: true});
-}
+});
 
 module.exports = app;
 EOF
@@ -52,7 +52,7 @@ const { PORT } = require('./config.js');
 const app = require('./app.js');
 
 app.listen(PORT, () => {
-    console.log(`http server listening on port ${PORT}`)
+    console.log(`http server listening on port ${PORT}`);
 });
 EOF
 ```
