@@ -1,8 +1,13 @@
 # edu-backend-velocity
 
+> I added config.js, this is a good practice to separate the reading of environment in a separate file.
+>
+> Rules: Work til first fail, then remove the folder and start over. Everything must be written, not copy/pasted.
+>
+
 ## level-1
 
-### part 1
+### setup
 ```bash
 cd ~
 cd ws
